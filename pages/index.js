@@ -1,6 +1,13 @@
+"use client"
 import Image from "next/image";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 
+// Importa ícones da biblioteca Lucide-React
+import { Menu, X, Github, Linkedin, Mail, Code, Zap, Briefcase } from "lucide-react";
+import { useState } from "react";
+
+// Configuração das fontes (conforme seu código original)
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -11,105 +18,263 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// --- Componente Header (Menu de Navegação Responsivo) ---
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { name: "Início", href: "/" },
+    { name: "Projetos", href: "/projetos" },
+    { name: "Sobre", href: "/sobre" },
+    { name: "Contato", href: "/contato" },
+  ];
+
+  return (
+    <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+      <div className="container mx-auto px-4 max-w-4xl flex justify-between items-center py-4">
+        {/* Logo/Nome */}
+        <Link
+          href="/"
+          className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}
+        >
+          &lt;Paulo Hemrique/&gt;
+        </Link>
+
+        {/* Menu Desktop */}
+        <nav className="hidden sm:flex space-x-6">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-gray-300 hover:text-indigo-400 font-medium transition-colors"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Menu Mobile Button */}
+        <button
+          className="sm:hidden text-gray-300 hover:text-indigo-400 transition-colors"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Menu Mobile Overlay */}
+      {isOpen && (
+        <div className="sm:hidden absolute w-full bg-gray-900 border-b border-gray-800 pb-4 transition-all duration-300">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="block px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-indigo-400 transition-colors"
+              onClick={() => setIsOpen(false)} // Fecha ao clicar
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      )}
+    </header>
+  );
+};
+
+
+// --- Componente de Ícone Social (Utilizando Lucide-React) ---
+const SocialIcon = ({ href, children, label }) => (
+  <Link
+    href={href}
+    target="_blank"
+    aria-label={label}
+    className="text-gray-400 hover:text-indigo-400 transition-colors duration-300 transform hover:scale-110"
+  >
+    {children}
+  </Link>
+);
+
+// --- Componente principal da Home Page (Home) ---
 export default function Home() {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
+      className={`${geistSans.variable} font-sans min-h-screen  text-white`}
     >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <Header /> {/* Adicionando o menu de navegação */}
+
+      {/* Container Principal */}
+      <main className="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
+
+        {/* Seção 1: HERO - Apresentação de Alto Impacto */}
+        <section className="text-center mb-24">
+          <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-indigo-500 shadow-xl ring-4 ring-indigo-500/20">
+            {/* Otimização de Imagem */}
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/perfil.png"
+              alt="Avatar do Desenvolvedor"
+              layout="fill"
+              objectFit="cover"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+          </div>
+
+          <h1 className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400`}>
+            Paulo Henrique Ferreira França
+          </h1>
+
+          <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            Desenvolvedor **React** e **Next.js** focado em construir interfaces de alta **performance** e **experiência do usuário (UX)** impecável.
+          </p>
+
+          {/* Botão de Chamada para Ação (CTA) */}
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <Link
+              href="/projetos"
+              className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow-xl transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2"
+            >
+              <Briefcase size={20} />
+              <span>Ver Projetos</span>
+            </Link>
+            <Link
+              href="/sobre"
+              className="px-8 py-3 border border-gray-600 text-gray-300 hover:text-white hover:border-indigo-500 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
+            >
+              <span>Minha Jornada</span>
+            </Link>
+          </div>
+        </section>
+
+        {/* --- Linha Divisória Elegante --- */}
+        <hr className="border-gray-800 my-16" />
+
+        {/* Nova Seção 2: SOBRE MIM (Visão Rápida) */}
+        <section className="mb-24">
+          <h2 className="text-3xl font-bold mb-8 flex items-center space-x-3 text-indigo-400">
+            <Zap size={28} />
+            <span>Sobre Mim (Quick View)</span>
+          </h2>
+          <div className="bg-gray-800 p-6 rounded-xl shadow-inner border border-gray-700">
+            <p className="text-lg text-gray-300 mb-4">
+              Sou apaixonado por transformar ideias em experiências digitais rápidas e acessíveis. Minha especialidade é o ecossistema **React/Next.js**, que utilizo para garantir **SEO, performance (SSR/SSG)** e código limpo.
+            </p>
+            <p className="text-gray-400 italic">
+              "A beleza de um produto é a eficiência com que ele resolve o problema do usuário."
+            </p>
+            <Link href="/sobre" className="mt-4 inline-block text-sm text-indigo-400 hover:text-indigo-300 font-medium transition-colors">
+              Leia a História Completa {'->'}
+            </Link>
+          </div>
+        </section>
+
+
+        {/* Seção 3: DESTAQUE DE PROJETOS */}
+        <section className="mb-24">
+          <h2 className="text-3xl font-bold mb-10 border-b border-indigo-500 pb-2 flex items-center space-x-2">
+            <Code size={28} />
+            <span>Projetos em Destaque</span>
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Card de Projeto 1 */}
+            <ProjectCard
+              title="E-commerce Moderno"
+              description="Loja virtual completa com carrinho, checkout e gerenciamento de estado global. Demonstrando Redux/Zustand."
+              techs={["Next.js", "TypeScript", "Tailwind CSS"]}
+              link="/projetos/ecommerce-moderno"
+            />
+
+            {/* Card de Projeto 2 */}
+            <ProjectCard
+              title="Dashboard Analítico"
+              description="Interface complexa para visualização de dados, utilizando gráficos e tabelas dinâmicas em tempo real."
+              techs={["React", "Framer Motion", "API REST"]}
+              link="/projetos/dashboard-analitico"
+            />
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/projetos"
+              className="text-indigo-400 hover:text-indigo-300 font-medium transition-colors border-b border-indigo-400 border-opacity-0 hover:border-opacity-100"
+            >
+              Ver todos  {'>'}
+            </Link>
+          </div>
+        </section>
+
+        {/* Seção 4: HABILIDADES PRINCIPAIS (Skills) - Mantida e aprimorada */}
+        <section className="mb-24">
+          <h2 className="text-3xl font-bold mb-10 border-b border-indigo-500 pb-2">
+            Stack e Habilidades
+          </h2>
+
+          <div className="flex flex-wrap gap-4 justify-center">
+            {['Next.js (App Router)', 'React Hooks', 'TypeScript', 'Tailwind CSS', 'Performance Optimization', 'Framer Motion', 'Testes Unitários (Jest/RTL)'].map(skill => (
+              <span
+                key={skill}
+                className="px-4 py-2 bg-gray-800 text-indigo-400 rounded-lg text-sm font-medium shadow-md border border-gray-700 transition-all hover:bg-gray-700"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* Seção 5: Contato Rápido / Links Sociais (Com ícones reais) */}
+        <section className="text-center">
+          <h2 className="text-2xl font-bold mb-6 text-indigo-300">
+            Vamos Construir Algo Juntos?
+          </h2>
+          <div className="flex justify-center space-x-8 text-3xl">
+            <SocialIcon
+              href="https://github.com/PauloHenrique993940"
+              label="GitHub"
+            >
+              <Github size={32} />
+            </SocialIcon>
+            <SocialIcon
+              href="www.linkedin.com/in/paulohenriquefranca"
+              label="LinkedIn"
+            >
+              <Linkedin size={32} />
+            </SocialIcon>
+            <SocialIcon
+              href="mailto:paulohenriqueferreirafranca2@gmail.com"
+              label="Email"
+            >
+              <Mail size={32} />
+            </SocialIcon>
+          </div>
+        </section>
+
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Rodapé Fixo */}
+      <footer className="w-full bg-gray-800 text-gray-500 text-center py-4 text-sm border-t border-gray-700">
+        &copy; {new Date().getFullYear()} Paulo Henrique. Código aberto e construído com ⚛️ Next.js.
       </footer>
     </div>
   );
 }
+
+// --- Componente Reutilizável para o Card de Projeto (Inalterado, mas mais bonito com o contexto) ---
+const ProjectCard = ({ title, description, techs, link }) => (
+  <Link
+    href={link}
+    className="block p-6 bg-gray-800 rounded-xl border border-gray-700 shadow-2xl hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-1"
+  >
+    <h3 className="text-2xl font-semibold mb-3 text-indigo-400">{title}</h3>
+    <p className="text-gray-400 mb-4">{description}</p>
+    <div className="flex flex-wrap gap-2">
+      {techs.map(tech => (
+        <span
+          key={tech}
+          className={`${geistMono.variable} font-mono text-xs px-3 py-1 bg-gray-700 rounded-lg text-gray-300`}
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+  </Link>
+);
