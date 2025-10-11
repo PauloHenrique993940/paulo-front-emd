@@ -281,7 +281,7 @@ export default function ProjetosPage() {
 
       {/* Rodapé Fixo */}
       <footer className="w-full bg-gray-800 text-gray-500 text-center py-4 text-sm border-t border-gray-700">
-        &copy; {new Date().getFullYear()} [Seu Nome].
+        &copy; {new Date().getFullYear()} Paulo Henrique Ferreira França.
       </footer>
     </div>
   );
