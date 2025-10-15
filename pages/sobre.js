@@ -66,10 +66,10 @@ export default function SobrePage() {
                 web que não apenas pareçam boas, mas que também ofereçam uma
                 experiência de usuário *extremamente* rápida e acessível.
               </p>
-              <p className="text-md text-gray-400">
-                Minha jornada começou com HTML e CSS, mas rapidamente evoluiu
-                para o ecossistema moderno do **React** e, mais especificamente,
-                o **Next.js**. Acredito no poder do *Server-Side Rendering
+              <p className="text-lg text-gray-300 mb-4 ">
+                Minha trahjetória começou com HTML e CSS, mas rapidamente evoluiu
+                para o ecossistema moderno do React e, mais especificamente,
+                o Next.js. Acredito no poder do Server-Side Rendering
                 (SSR)* e na otimização contínua para entregar o melhor produto
                 digital possível.
               </p>
@@ -160,8 +160,7 @@ export default function SobrePage() {
                 'React.JS',
                 'hTML5 Semântico',
                 'Respónsividade',
-                'UX/UI'
-
+                'UX/UI',
               ].map((tool) => (
                 <span
                   key={tool}
