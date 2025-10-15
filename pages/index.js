@@ -196,7 +196,7 @@ export default function Home() {
               link="https://controle-financeiro-delta-steel.vercel.app/"
             />
             <ProjectCard
-              title="Dashboard Analítico"
+              title="Projeto marvel"
               description="Interface complexa para visualização de dados, utilizando gráficos e tabelas dinâmicas em tempo real."
               techs={['React', 'Framer Motion', 'API REST']}
               link="https://paulohenrique993940.github.io/projeto-marvel-mapadev-week-final-main/"
