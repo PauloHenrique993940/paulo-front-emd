@@ -193,19 +193,15 @@ export default function Home() {
               title="Plataforma Finanças"
               description="Loja virtual completa com carrinho, checkout e gerenciamento de estado global. Demonstrando Redux/Zustand."
               techs={['Next.js', 'TypeScript', 'Tailwind CSS']}
-              link="/projetos/ecommerce-moderno"
+              link="https://controle-financeiro-delta-steel.vercel.app/"
             />
             <ProjectCard
               title="Dashboard Analítico"
               description="Interface complexa para visualização de dados, utilizando gráficos e tabelas dinâmicas em tempo real."
               techs={['React', 'Framer Motion', 'API REST']}
-              link="/projetos/dashboard-analitico"
+              link="https://paulohenrique993940.github.io/projeto-marvel-mapadev-week-final-main/"
             />
-            <img
-              src={'./controlefinanceiro.png'}
-              alt="Projeto 1"
-              className="cardImagen"
-            />
+            <img src={'./hero.png'} alt="Projeto 1" className="cardImagen" />
           </div>
 
           <div className="text-center mt-12">
