@@ -1,9 +1,21 @@
 @import "tailwindcss";
 
-body{
-  background: url("/PAPELPAREDE.gif") no-repeat center center;
+body {
+  background: linear-gradient(180deg, #0d1b2a 0%, #1b263b 40%, #415a77 70%, #e0e1dd 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
+  color: #f4f4f4;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 
-
+  
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.05), transparent 70%);
+  pointer-events: none;
+}
