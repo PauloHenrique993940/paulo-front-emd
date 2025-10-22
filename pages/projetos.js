@@ -183,6 +183,18 @@ const PROJECTS_DATA = [
     liveUrl: 'https://controle-financeiro-delta-steel.vercel.app/',
     repoUrl: 'https://github.com/PauloHenrique993940/controle-financeiro.git',
   },
+  {
+    id: 8,
+    slug: 'cafeteria Sabor e Aroma',
+    title: 'Cafeteria Sabor e Aroma',
+    description:
+      'Página interativa desenvolvida com React e Next, utilizando Hooks para gerenciamento de estado e lógica reativa, garantindo performance, modularidade e experiência fluida ao usuário e filtros dinâmicos.',
+    techs: ['React', 'Next', 'TypeScript'],
+    image: '/cafeteria.png',
+    liveUrl:
+      'https://cafe-aroma-preto-2t3me1rxy-paulohenrique537s-projects.vercel.app/',
+    repoUrl: 'https://github.com/PauloHenrique993940/cafe-aroma.git',
+  },
 ];
 
 
