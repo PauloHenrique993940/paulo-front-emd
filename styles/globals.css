@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-  background: linear-gradient(180deg, #0d1b2a 0%, #1b263b 40%, #415a77 70%, #e0e1dd 100%);
+  background-color: #040814;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

@@ -54,35 +54,78 @@ export default function SobrePage() {
           </section>
 
           {/* Seção de Introdução e História */}
-          <section className="mb-20 grid md:grid-cols-3 gap-8 items-center bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
-            <div className="md:col-span-2">
+          <section className="mb-20 flex gap-20  bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
+            <div className="flex flex-col justify-center items-center">
+              <div className="flex justify-between  items-center mb-10">
+                <div className="flex items-center space-x-3">
+                  <Zap size={28} className="text-indigo-400" />
+                  <h2 className="text-3xl font-bold text-indigo-400">
+                    Quem Eu Sou
+                  </h2>
+                </div>
+              </div>
+
+              <div className="flex justify-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-10 border-4 border-indigo-400 shadow-lg">
+                  <Image
+                    src="/perfil.png"
+                    alt="Foto de Perfil"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              </div>
+
+              <p className="text-lg text-justiy leading-relaxed  mb-4">
+                Sou Paulo Henrique Ferreira França, desenvolvedor Front-end
+                dedicado a criar experiências digitais marcantes. Acredito que
+                cada linha de código é uma oportunidade de entregar valor real
+                às pessoas. Meu foco está em transformar ideias em interfaces
+                que unem design, desempenho e acessibilidade.
+              </p>
+              <p className="text-lg text-gray-300 mb-4">
+                Gosto de trabalhar com tecnologias modernas, explorando o
+                potencial de HTML, CSS, JavaScript e React. Busco constantemente
+                evoluir, aprendendo novas ferramentas e aprimorando minha forma
+                de pensar e desenvolver. Mais do que escrever código, gosto de
+                resolver problemas e simplificar o complexo.
+              </p>
+              <p className="text-lg text-gray-300 mb-4">
+                Para mim, o front-end é onde a tecnologia encontra a
+                criatividade. É o espaço onde o visual e a lógica se unem para
+                criar algo que realmente faz diferença. Cada projeto é uma
+                chance de aprender, experimentar e superar limites.
+              </p>
+              <p className="text-lg text-gray-300 mb-4">
+                Tenho uma visão centrada no usuário e atenção aos detalhes.
+                Valorizo interfaces intuitivas, responsivas e leves, que
+                funcionam bem em qualquer dispositivo. Acredito que performance
+                é parte essencial da experiência do usuário — não um detalhe.
+              </p>
+              <p className="text-lg text-gray-300 mb-4">
+                Sou movido por desafios e pela vontade de entregar algo melhor a
+                cada novo projeto. Trabalho com foco em clareza, consistência e
+                propósito. Vejo o desenvolvimento como uma forma de arte e
+                expressão, mas também como uma ferramenta de impacto real.
+              </p>
+              <p className="text-lg text-indigo-300 font-semibold italic mb-6 text-center leading-relaxed">
+                “Quero continuar crescendo, transformando ideias em projetos que
+                inspirem, unam pessoas e gerem impacto positivo no mundo.”
+              </p>
+
               <h2 className="text-3xl font-bold mb-4 text-indigo-400 flex items-center space-x-3">
                 <Zap size={28} />
-                <span>Quem Eu Sou</span>
+                <span>Minha História</span>
               </h2>
-              <p className="text-lg text-gray-300 mb-4">
-                Eu sou Paulo Henrique Ferreira França, desenvolvedor Front-end
-                com **[X] anos** de experiência. Minha paixão é criar soluções
-                web que não apenas pareçam boas, mas que também ofereçam uma
-                experiência de usuário *extremamente* rápida e acessível.
-              </p>
               <p className="text-lg text-gray-300 mb-4 ">
-                Minha trahjetória começou com HTML e CSS, mas rapidamente evoluiu
-                para o ecossistema moderno do React e, mais especificamente,
-                o Next.js. Acredito no poder do Server-Side Rendering
-                (SSR)* e na otimização contínua para entregar o melhor produto
-                digital possível.
+                Minha trajetória começou com <strong>HTML</strong> e{' '}
+                <strong>CSS</strong>, mas rapidamente evoluiu para o ecossistema
+                moderno do <strong>React</strong> e, mais especificamente, do{' '}
+                <strong>Next.js</strong>. Acredito no poder do{' '}
+                <strong>Server-Side Rendering (SSR)</strong> e na
+                <em>otimização contínua</em> como caminhos para entregar
+                produtos digitais rápidos, acessíveis e de alto impacto.
               </p>
-            </div>
-            <div className="md:col-span-1 flex justify-center">
-              <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg">
-                <Image
-                  src="/perfil.png"
-                  alt="Foto de Perfil"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
             </div>
           </section>
 

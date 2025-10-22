@@ -116,7 +116,7 @@ export default function Home() {
           </div>
 
           <h1
-            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400`}
+            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-amber-950`}
           >
             Paulo Henrique Ferreira França
           </h1>
@@ -160,8 +160,8 @@ export default function Home() {
             <p className="text-lg text-gray-300 mb-4">
               Sou apaixonado por transformar ideias em experiências digitais
               rápidas e acessíveis. Minha especialidade é o ecossistema
-              **React/Next.js**, que utilizo para garantir **SEO, performance
-              (SSR/SSG)** e código limpo.
+              React/Next.js, que utilizo para garantir SEO, performance
+              (SSR/SSG) e código limpo.
             </p>
             <p className="text-gray-400 italic">
               "A beleza de um produto é a eficiência com que ele resolve o
