@@ -1,22 +1,33 @@
 .card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--glass-border);
   padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  background: var(--card-bg);
+  box-shadow: 0 14px 40px rgba(2,6,23,0.6);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 28px 70px rgba(2,6,23,0.75);
 }
 
 .card a {
   display: inline-block;
   margin-top: 1rem;
-  color: #6a11cb;
-  font-weight: bold;
+  color: var(--accent-2);
+  font-weight: 700;
   text-decoration: none;
 }
 
+.card h3 {
+  color: var(--text);
+  margin: 0 0 0.5rem 0;
+}
+
+.card p {
+  color: var(--muted);
+  margin: 0;
+}

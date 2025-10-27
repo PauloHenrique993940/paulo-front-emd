@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
-        {/* Logo/Nome com LINK PARA HOME */}
+        
         <Link
           href="/"
           className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}

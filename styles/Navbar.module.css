@@ -3,18 +3,28 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
-  background: linear-gradient(90deg, #00bcd4, #6a11cb);
-  color: white;
+  background: rgba(7,16,34,0.95); /* dark navbar */
+  color: var(--text);
+  box-shadow: 0 6px 20px rgba(2,6,23,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
 }
 
 .navbar ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar a {
-  color: white;
+  color: var(--muted);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.15s ease, transform 0.12s ease;
+}
+
+.navbar a:hover {
+  color: var(--accent-2);
+  transform: translateY(-2px);
 }
