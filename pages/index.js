@@ -116,7 +116,7 @@ export default function Home() {
           </div>
 
           <h1
-            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-amber-950`}
+            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-white`}
           >
             Paulo Henrique Ferreira França
           </h1>
@@ -180,7 +180,7 @@ export default function Home() {
         <section className="mb-24">
           <h2 className="text-3xl font-bold mb-10 border-b border-indigo-500 pb-2 flex items-center space-x-2">
             <Code size={28} />
-            <span>Projetos em Destaque</span>
+            <span>Projetos </span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10 text-center">

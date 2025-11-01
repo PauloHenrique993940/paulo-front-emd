@@ -9,10 +9,6 @@ import { Code, Briefcase, Zap, GraduationCap, TextAlignCenter } from "lucide-rea
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-// --- Componente Header (Você deve usar o seu Header real aqui, ou importá-lo) ---
-// Para evitar repetição e garantir que o código seja utilizável, estou assumindo que
-// você moverá o Header para um componente separado (ex: components/Header.js).
-// Por enquanto, usaremos um placeholder.
 
 const Header = () => (
     <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
