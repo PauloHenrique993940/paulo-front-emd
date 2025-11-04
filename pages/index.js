@@ -30,7 +30,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md border-b border-gray-800">
+    <header className="sticky bg-blue-950 text-white top-0 z-50 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-4 max-w-4xl flex justify-between items-center py-4">
         {/* Logo/Nome */}
         <Link

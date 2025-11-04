@@ -9,20 +9,34 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 
 const Header = () => (
-    <header className="sticky top-0 z-50 text-black backdrop-blur-md border-b border-gray-800">
-        <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
-            <Link href="/" className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}>
-                &lt;Paulo Henrique/&gt;
-            </Link>
-            <nav className="hidden sm:flex space-x-6">
-                {/* Links de navegação aqui... */}
-                <Link href="/" className="text-gray-300 hover:text-indigo-400">Início</Link>
-                <Link href="/projetos" className="text-gray-300 hover:text-indigo-400">Projetos</Link>
-                <Link href="/sobre" className="text-indigo-400 font-bold border-b-2 border-indigo-400">Sobre</Link>
-                <Link href="/contato" className="text-gray-300 hover:text-indigo-400">Contato</Link>
-            </nav>
-        </div>
-    </header>
+  <header className="sticky top-0 z-50 bg-blue-950 text-white backdrop-blur-md border-b border-gray-800">
+    <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
+      <Link
+        href="/"
+        className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}
+      >
+        &lt;Paulo Henrique/&gt;
+      </Link>
+      <nav className="hidden sm:flex space-x-6">
+        {/* Links de navegação aqui... */}
+        <Link href="/" className="text-gray-300 hover:text-indigo-400">
+          Início
+        </Link>
+        <Link href="/projetos" className="text-gray-300 hover:text-indigo-400">
+          Projetos
+        </Link>
+        <Link
+          href="/sobre"
+          className="text-indigo-400 font-bold border-b-2 border-indigo-400"
+        >
+          Sobre
+        </Link>
+        <Link href="/contato" className="text-gray-300 hover:text-indigo-400">
+          Contato
+        </Link>
+      </nav>
+    </div>
+  </header>
 );
 
 
