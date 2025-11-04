@@ -1,13 +1,13 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 
-// Importa ícones da biblioteca Lucide-React
+
 import { Menu, X, Github, Linkedin, Mail, Code, Zap, Briefcase } from "lucide-react";
 import { useState } from "react";
 
-// Configuração das fontes (conforme seu código original)
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// --- Componente Header (Menu de Navegação Responsivo) ---
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -37,7 +37,7 @@ const Header = () => {
           href="/"
           className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}
         >
-          &lt;Paulo Hemrique/&gt;
+          &lt;Paulo Henrique/&gt;
         </Link>
 
         {/* Menu Desktop */}
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-indigo-500 shadow-xl ring-4 ring-indigo-500/20">
             {/* Otimização de Imagem */}
             <Image
-              src="/perfil.png"
+              src="/paulo.png"
               alt="Avatar do Desenvolvedor"
               layout="fill"
               objectFit="cover"
@@ -184,9 +184,11 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10 text-center">
-            <img
-              src={'./controlefinanceiro.png'}
+            <Image
+              src="/controlefinanceiro.png"
               alt="Projeto 1"
+              width={400}
+              height={250}
               className="cardImagen"
             />
             <ProjectCard
@@ -201,7 +203,13 @@ export default function Home() {
               techs={['React', 'Framer Motion', 'API REST']}
               link="https://paulohenrique993940.github.io/projeto-marvel-mapadev-week-final-main/"
             />
-            <img src={'./hero.png'} alt="Projeto 1" className="cardImagen" />
+            <Image
+              src="/hero.png"
+              alt="Projeto 1"
+              width={400}
+              height={250}
+              className="cardImagen"
+            />
           </div>
 
           <div className="text-center mt-12">
