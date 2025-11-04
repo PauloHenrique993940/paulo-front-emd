@@ -302,7 +302,7 @@ export default function Home() {
         </section>
       </main>
       {/* Rodapé Fixo */}
-      <footer className="w-full bg-gray-600 text-white text-center py-4 text-sm border-t border-gray-700">
+      <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
         &copy; {new Date().getFullYear()} Paulo Henrique. Código aberto e
         construído com ⚛️ Next.js.
       </footer>

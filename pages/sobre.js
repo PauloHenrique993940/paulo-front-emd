@@ -225,7 +225,7 @@ export default function SobrePage() {
         </main>
 
         {/* Rodapé */}
-        <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
+        <footer className="w-full text-black  text-center py-4 text-sm border-t border-gray-700">
           &copy; {new Date().getFullYear()} Paulo Henrique .
         </footer>
       </div>
