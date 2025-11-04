@@ -180,7 +180,7 @@ export default function Home() {
         <section className="mb-24">
           <h2 className="text-3xl font-bold mb-10 border-b border-indigo-500 pb-2 flex items-center space-x-2">
             <Code size={28} />
-            <span>Projetos </span>
+            <span>Projetos Destaques </span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10 text-center">
@@ -209,6 +209,19 @@ export default function Home() {
               width={400}
               height={250}
               className="cardImagen"
+            />
+            <Image
+              src="/botflix.png"
+              alt="Projeto 1"
+              width={400}
+              height={250}
+              className="cardImagen"
+            />
+            <ProjectCard
+              title="Botflix"
+              description="Desenvolvimento de uma interface inteligente para recomendação de filmes, integrando APIs externas e automação com N8N."
+              techs={['API REST']}
+              link="https://paulohenrique993940.github.io/botflix-pro-redesign-main/"
             />
           </div>
 
