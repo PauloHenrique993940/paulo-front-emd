@@ -30,7 +30,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+    <header className="sticky top-0 z-50 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-4 max-w-4xl flex justify-between items-center py-4">
         {/* Logo/Nome */}
         <Link
@@ -98,7 +98,7 @@ const SocialIcon = ({ href, children, label }) => (
 // --- Componente principal da Home Page (Home) ---
 export default function Home() {
   return (
-    <div className={`${geistSans.variable} font-sans min-h-screen  text-white`}>
+    <div className={`${geistSans.variable} font-sans min-h-screen  text-b`}>
       <Header /> {/* Adicionando o menu de navegação */}
       {/* Container Principal */}
       <main className="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
@@ -116,12 +116,12 @@ export default function Home() {
           </div>
 
           <h1
-            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-white`}
+            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4  text-black`}
           >
             Paulo Henrique Ferreira França
           </h1>
 
-          <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-black mb-8 max-w-3xl mx-auto">
             Desenvolvedor Web Front-End especializado em React e Next.js, com
             experiência na construção de interfaces modernas e responsivas.
             Apaixonado por criar experiências de usuário (UX) intuitivas,
@@ -152,7 +152,7 @@ export default function Home() {
 
         {/* Nova Seção 2: SOBRE MIM (Visão Rápida) */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold mb-8 flex items-center space-x-3 text-indigo-400">
+          <h2 className="text-3xl font-bold mb-8 flex items-center space-x-3 text-black">
             <Zap size={28} />
             <span>Sobre Mim (Quick View)</span>
           </h2>
@@ -223,6 +223,19 @@ export default function Home() {
               techs={['API REST']}
               link="https://paulohenrique993940.github.io/botflix-pro-redesign-main/"
             />
+            <Image
+              src="/pokedexunit.png"
+              alt="Pokedex Unit"
+              width={400}
+              height={250}
+              className="cardImagen"
+            />
+            <ProjectCard
+              title="Pokedex Unit"
+              description="Criação de uma pokedex  com visualição  de pokemons e seus atributos"
+              techs={['Javascript']}
+              link="https://pokedex-uniti.vercel.app/"
+            />
           </div>
 
           <div className="text-center mt-12">
@@ -263,7 +276,7 @@ export default function Home() {
 
         {/* Seção 5: Contato Rápido / Links Sociais (Com ícones reais) */}
         <section className="text-center">
-          <h2 className="text-2xl font-bold mb-6 text-indigo-300">
+          <h2 className="text-2xl font-bold mb-6 text-black">
             Vamos Construir Algo Juntos?
           </h2>
           <div className="flex justify-center space-x-8 text-3xl">
@@ -289,7 +302,7 @@ export default function Home() {
         </section>
       </main>
       {/* Rodapé Fixo */}
-      <footer className="w-full bg-gray-800 text-gray-500 text-center py-4 text-sm border-t border-gray-700">
+      <footer className="w-full bg-gray-600 text-white text-center py-4 text-sm border-t border-gray-700">
         &copy; {new Date().getFullYear()} Paulo Henrique. Código aberto e
         construído com ⚛️ Next.js.
       </footer>

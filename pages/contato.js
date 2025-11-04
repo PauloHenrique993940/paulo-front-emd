@@ -10,10 +10,10 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 // --- Componente Header (Placeholder, use seu componente real) ---
 const Header = () => (
-    <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+    <header className="sticky top-0 z-50 text-black backdrop-blur-md border-b border-gray-800">
         <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
             <Link href="/" className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}>
-                &lt;[SeuNick]/&gt;
+                &lt;Paulo Henrique/&gt;
             </Link>
             <nav className="hidden sm:flex space-x-6">
                 {/* Links de navegação aqui... */}
@@ -39,7 +39,7 @@ export default function ContatoPage() {
                     <h1 className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400`}>
                         Fale Comigo
                     </h1>
-                    <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                    <p className="text-xl text-black max-w-3xl mx-auto">
                         Seja para uma proposta de trabalho, parceria ou apenas dizer um "olá".
                     </p>
                 </section>
@@ -61,7 +61,7 @@ export default function ContatoPage() {
                                 <input
                                     type="text"
                                     id="nome"
-                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-indigo-500 focus:border-indigo-500"
+                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-blackfocus:ring-indigo-500 focus:border-indigo-500"
                                     placeholder="Seu Nome"
                                 />
                             </div>
@@ -70,7 +70,7 @@ export default function ContatoPage() {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-indigo-500 focus:border-indigo-500"
+                                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-black focus:ring-indigo-500 focus:border-indigo-500"
                                     placeholder="seu@email.com"
                                 />
                             </div>
@@ -93,8 +93,8 @@ export default function ContatoPage() {
                     </div>
 
                     {/* Coluna 2: Informações de Contato e Links */}
-                    <div className="space-y-8 p-8 md:p-0">
-                        <h2 className="text-2xl font-bold mb-4 text-white">Outras Formas de Contato</h2>
+                    <div className="space-y-8 p-8 text-black itens-center flex-r md:p-0">
+                        <h2 className="text-2xl font-bold mb-4 text-black">Outras Formas de Contato</h2>
                         
                         {/* Item de Contato: E-mail */}
                         <ContactInfoItem 
@@ -134,7 +134,7 @@ export default function ContatoPage() {
             </main>
 
             {/* Rodapé */}
-            <footer className="w-full bg-gray-800 text-gray-500 text-center py-4 text-sm border-t border-gray-700">
+            <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
                 &copy; {new Date().getFullYear()} [Paulo Henrique].
             </footer>
         </div>

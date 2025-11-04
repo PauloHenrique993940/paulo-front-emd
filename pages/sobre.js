@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 
 const Header = () => (
-    <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+    <header className="sticky top-0 z-50 text-black backdrop-blur-md border-b border-gray-800">
         <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
             <Link href="/" className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}>
                 &lt;Paulo Henrique/&gt;
@@ -37,11 +37,11 @@ export default function SobrePage() {
           {/* Título Principal */}
           <section className="text-center mb-16">
             <h1
-              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400`}
+              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-black`}
             >
               Minha Jornada
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-black max-w-3xl mx-auto">
               Desenvolvimento, inovação e a busca incessante por código de alta
               performance.
             </p>
@@ -211,7 +211,7 @@ export default function SobrePage() {
         </main>
 
         {/* Rodapé */}
-        <footer className="w-full bg-gray-800 text-gray-500 text-center py-4 text-sm border-t border-gray-700">
+        <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
           &copy; {new Date().getFullYear()} Paulo Henrique .
         </footer>
       </div>
