@@ -183,7 +183,7 @@ const PROJECTS_DATA = [
     repoUrl: 'https://github.com/PauloHenrique993940/controle-financeiro.git',
   },
   {
-    id: 8,
+    id: 9,
     slug: 'cafeteria Sabor e Aroma',
     title: 'Cafeteria Sabor e Aroma',
     description:
@@ -193,6 +193,29 @@ const PROJECTS_DATA = [
     liveUrl:
       'https://cafe-aroma-preto-2t3me1rxy-paulohenrique537s-projects.vercel.app/',
     repoUrl: 'https://github.com/PauloHenrique993940/cafe-aroma.git',
+  },
+  {
+    id: 10,
+    slug: 'plataforma de games',
+    title: 'App My Games',
+    description:
+      'Uma aplicação demo onde você pode explorar jogos, visualizar detalhes completos, deixar comentários e gerenciar todo o catálogo de forma simples e intuitiva',
+    techs: ['React', 'Vite', 'TypeScript'],
+    image: '/prataformaGame.png',
+    liveUrl: 'https://my-games-app-fuqp.vercel.app/',
+    repoUrl: 'https://github.com/PauloHenrique993940/my-games-app.git',
+  },
+  {
+    id: 11,
+    slug: 'App Web Kanban',
+    title: 'Applicação Web Kanban',
+    description:
+      'Desenvolvi um Kanban interativo usando React/TS, focando em tipagem estrita e arquitetura de estado centralizada (useKanbanStore). Implementei Drag & Drop nativo para movimentação de cartões e persistência automática de dados via localStorage. O projeto inclui componentes reutilizáveis, modais de edição e funcionalidades de Busca/Filtro.',
+    techs: ['React', 'TypeScript'],
+    image: '/kanban.png',
+    liveUrl: 'https://app-gerenciador-kanban-bfs5.vercel.app/',
+    repoUrl:
+      'https://github.com/PauloHenrique993940/app-gerenciador-kanban.git',
   },
 ];
 
@@ -263,7 +286,7 @@ export default function ProjetosPage() {
             Toda minha trajetória de Desenvolvimento voçê acompanha, Aqui!
           </h1>
           <p className="text-xl text-black max-w-3xl mx-auto">
-            Uma coleção de trabalhos que demonstram minhas habilidades em design, desenvolvimento e otimização com React e Next.js.
+            Uma coleção de trabalhos que demonstram minhas habilidades em design, desenvolvimento e otimização com React.
           </p>
         </section>
 

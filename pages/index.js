@@ -99,6 +99,7 @@ const SocialIcon = ({ href, children, label }) => (
 export default function Home() {
   return (
     <div className={`${geistSans.variable} font-sans min-h-screen  text-b`}>
+      
       <Header /> {/* Adicionando o menu de navegação */}
       {/* Container Principal */}
       <main className="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
