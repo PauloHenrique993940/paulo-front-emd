@@ -89,7 +89,7 @@ const SocialIcon = ({ href, children, label }) => (
     href={href}
     target="_blank"
     aria-label={label}
-    className="text-gray-400 hover:text-indigo-400 transition-colors duration-300 transform hover:scale-110"
+    className="text-white hover:text-indigo-400 transition-colors duration-300 transform hover:scale-110"
   >
     {children}
   </Link>
@@ -99,7 +99,6 @@ const SocialIcon = ({ href, children, label }) => (
 export default function Home() {
   return (
     <div className={`${geistSans.variable} font-sans min-h-screen  text-b`}>
-      
       <Header /> {/* Adicionando o menu de navegação */}
       {/* Container Principal */}
       <main className="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
@@ -117,12 +116,12 @@ export default function Home() {
           </div>
 
           <h1
-            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4  text-black`}
+            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 text-white drop-shadow-[0_0_25px_rgba(0,0,0,0.7)]`}
           >
             Paulo Henrique Ferreira França
           </h1>
 
-          <p className="text-xl sm:text-2xl text-black mb-8 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto">
             Desenvolvedor Web Front-End especializado em React e Next.js, com
             experiência na construção de interfaces modernas e responsivas.
             Apaixonado por criar experiências de usuário (UX) intuitivas,
@@ -134,16 +133,38 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link
               href="/projetos"
-              className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow-xl transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2"
+              className="px-8 py-3 
+             bg-[#0f1e2e] 
+             hover:bg-[#1a2f4a]
+             text-white 
+             font-semibold 
+             rounded-lg 
+             shadow-[0_0_25px_rgba(0,0,0,0.5)]
+             hover:shadow-[0_0_35px_rgba(0,150,255,0.35)]
+             transition-all 
+             duration-300 
+             transform 
+             hover:scale-[1.03]
+             flex items-center justify-center space-x-2"
             >
               <Briefcase size={20} />
               <span>Ver Projetos</span>
             </Link>
+
             <Link
               href="/sobre"
-              className="px-8 py-3 border border-gray-600 text-gray-300 hover:text-white hover:border-indigo-500 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
+              className="px-8 py-3
+             border border-[#345b7c]
+             text-[#b8c7d9]
+             hover:text-white 
+             hover:border-[#5b8fff]
+             rounded-lg 
+             font-semibold 
+             transition-all 
+             duration-300 
+             flex items-center justify-center space-x-2"
             >
-              <span>Minha Jornada</span>
+              Minha Jornada
             </Link>
           </div>
         </section>
@@ -153,7 +174,7 @@ export default function Home() {
 
         {/* Nova Seção 2: SOBRE MIM (Visão Rápida) */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold mb-8 flex items-center space-x-3 text-black">
+          <h2 className="text-3xl font-bold mb-8 flex items-center space-x-3 text-white">
             <Zap size={28} />
             <span>Sobre Mim (Quick View)</span>
           </h2>
@@ -242,7 +263,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/projetos"
-              className="text-indigo-400 hover:text-indigo-300 font-medium transition-colors border-b border-indigo-400 border-opacity-0 hover:border-opacity-100"
+              className="text-white hover:text-indigo-300 font-medium transition-colors border-b border-indigo-400 border-opacity-0 hover:border-opacity-100"
             >
               Ver todos {'>'}
             </Link>
@@ -277,7 +298,7 @@ export default function Home() {
 
         {/* Seção 5: Contato Rápido / Links Sociais (Com ícones reais) */}
         <section className="text-center">
-          <h2 className="text-2xl font-bold mb-6 text-black">
+          <h2 className="text-2xl font-bold mb-6 text-white">
             Vamos Construir Algo Juntos?
           </h2>
           <div className="flex justify-center space-x-8 text-3xl">
@@ -303,7 +324,7 @@ export default function Home() {
         </section>
       </main>
       {/* Rodapé Fixo */}
-      <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
+      <footer className="w-full text-white text-center py-4 text-sm border-t border-gray-700">
         &copy; {new Date().getFullYear()} Paulo Henrique. Código aberto e
         construído com ⚛️ Next.js.
       </footer>
@@ -315,10 +336,17 @@ export default function Home() {
 const ProjectCard = ({ title, description, techs, link }) => (
   <Link
     href={link}
-    className="block p-6 bg-gray-800 rounded-xl border border-gray-700 shadow-2xl hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-1"
+    className="block p-6 bg-transparent rounded-xl border border-gray-700 shadow-2xl hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-1"
   >
-    <h3 className="text-2xl font-semibold mb-3 text-indigo-400">{title}</h3>
-    <p className="text-gray-400 mb-4">{description}</p>
+   <h3
+  className="text-2xl font-semibold mb-3 
+             text-white 
+             drop-shadow-[0_0_12px_rgba(200,200,200,0.35)]"
+>
+  {title}
+</h3>
+
+    <p className="text-white mb-4">{description}</p>
     <div className="flex flex-wrap gap-2">
       {techs.map(tech => (
         <span
