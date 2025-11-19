@@ -55,7 +55,7 @@ export default function SobrePage() {
             >
               Minha Jornada
             </h1>
-            <p className="text-xl text-black max-w-3xl mx-auto">
+            <p className="text-xl  max-w-3xl mx-auto">
               Desenvolvimento, inovação e a busca incessante por código de alta
               performance.
             </p>
@@ -225,7 +225,7 @@ export default function SobrePage() {
         </main>
 
         {/* Rodapé */}
-        <footer className="w-full text-black  text-center py-4 text-sm border-t border-gray-700">
+        <footer className="w-full  text-center py-4 text-sm border-t border-gray-700">
           &copy; {new Date().getFullYear()} Paulo Henrique .
         </footer>
       </div>

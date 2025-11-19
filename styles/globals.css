@@ -1,63 +1,7 @@
 @import "tailwindcss";
-:root {
-  --accent-1: #ff6ec7;
-  /* Rosa neon */
-  --accent-2: #7366ff;
-  /* Roxo suave */
-  --accent-3: #4fd1c5;
-  /* Turquesa */
-  --accent-4: #ffe66d;
-  /* Amarelo pastel */
-  --accent-5: #ff9a3c;
-  /* Laranja neon */
-  --accent-6: #ff3f3f;
-  /* Vermelho neon */
-  --accent-7: #00ff95;
-  /* Verde neon */
-  --accent-8: #54a3ff;
-  /* Azul claro */
-  --accent-9: #ff5fed;
-  /* Rosa choque */
-  --accent-10: #4bffa5;
-  /* Verde menta brilhante */
-  --accent-11: #8b5cf6;
-  /* Roxo vibrante */
-  --accent-12: #70f0ff;
-  /* Azul piscina neon */
-}
-.animated-gradient {
-  background: linear-gradient(120deg,
-      var(--accent-1),
-      var(--accent-2),
-      var(--accent-3),
-      var(--accent-4),
-      var(--accent-5),
-      var(--accent-6),
-      var(--accent-7),
-      var(--accent-8),
-      var(--accent-9),
-      var(--accent-10),
-      var(--accent-11),
-      var(--accent-12));
-  background-size: 800% 800%;
-  animation: moveGradient 20s ease infinite;
-}
 
-@keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 body {
-  background: url("../public/capa-portfolio.png") center/cover no-repeat fixed;
+  background: url("../public/PAPELPAREDE.gif") center/cover no-repeat fixed;
   background-size: 100%;
   color: #ffffff;
   font-family: "Roboto", sans-serif;

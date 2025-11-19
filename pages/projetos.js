@@ -282,10 +282,10 @@ export default function ProjetosPage() {
 
       <main className="container mx-auto px-4 py-16 sm:py-24 max-w-6xl">
         <section className="text-center mb-16">
-          <h1 className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4  text-black`}>
+          <h1 className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4  `}>
             Toda minha trajetória de Desenvolvimento voçê acompanha, Aqui!
           </h1>
-          <p className="text-xl text-black max-w-3xl mx-auto">
+          <p className="text-xl  max-w-3xl mx-auto">
             Uma coleção de trabalhos que demonstram minhas habilidades em design, desenvolvimento e otimização com React.
           </p>
         </section>
@@ -314,7 +314,7 @@ export default function ProjetosPage() {
       </main>
 
       {/* Rodapé Fixo */}
-      <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
+      <footer className="w-full  text-center py-4 text-sm border-t border-gray-700">
         &copy; {new Date().getFullYear()} Paulo Henrique Ferreira França.
       </footer>
     </div>
