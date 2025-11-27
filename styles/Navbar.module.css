@@ -1,31 +1,75 @@
+/* NAVBAR — Combinação perfeita com o body */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 1rem 5%;
-  background: rgba(7, 16, 34, 0.95);
-  /* dark navbar */
+
+  /* Preto com transparência tech */
+  background: rgba(5, 5, 5, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  /* Glow premium (laranja + verde leve) */
+  box-shadow:
+    0 0 18px rgba(255, 120, 40, 0.06),
+    0 0 26px rgba(40, 255, 150, 0.07);
+
   color: var(--text);
-  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
+/* LISTA */
 .navbar ul {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.35rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* LINKS */
 .navbar a {
-  color: var(--muted);
+  color: var(--text-muted);
+
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.15s ease, transform 0.12s ease;
+  letter-spacing: 0.5px;
+
+  transition:
+    color 0.25s ease,
+    transform 0.18s ease,
+    text-shadow 0.25s ease;
 }
 
 .navbar a:hover {
-  color: var(--accent-2);
+  color: var(--accent-1);
+
   transform: translateY(-2px);
+
+  text-shadow:
+    0 0 8px rgba(255, 120, 40, 0.5),
+    0 0 14px rgba(255, 85, 0, 0.35);
+}
+
+/* LOGO */
+.navbar .logo {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  /* Cor laranja premium */
+  color: var(--accent-3);
+
+  transition: 0.25s ease;
+}
+
+.navbar .logo:hover {
+  filter: brightness(1.18);
+
+  text-shadow:
+    0 0 14px rgba(255, 120, 40, 0.55),
+    0 0 22px rgba(255, 85, 0, 0.35);
 }

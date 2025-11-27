@@ -51,7 +51,7 @@ export default function SobrePage() {
           {/* Título Principal */}
           <section className="text-center mb-16">
             <h1
-              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-black`}
+              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-white`}
             >
               Minha Jornada
             </h1>
