@@ -104,7 +104,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
         {/* Seção 1: HERO - Apresentação de Alto Impacto */}
         <section className="text-center mb-24">
-          <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-indigo-500 shadow-xl ring-4 ring-indigo-500/20">
+          <div className="relative w-32 h-32 mx-auto mb-6 w-100 h-100 overflow-hidden border-4 border-indigo-500 shadow-xl ring-4 ring-indigo-500/20">
             {/* Otimização de Imagem */}
             <Image
               src="/paulo.png"
