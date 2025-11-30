@@ -15,6 +15,7 @@ body {
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
+
 .logo {
   display: inline-flex;
   /* permite ícone + texto alinhados */
@@ -31,21 +32,23 @@ body {
   line-height: 1;
 }
 
-.buttonColor{
+.buttonColor {
   color: #ffffff;
   font-weight: bold;
 }
 
-.title{
+.title {
   color: #6b14bd;
 }
-.bordar{
+
+.bordar {
   border-bottom: 4px solid #6b14bd;
 }
 
-.bg-Card{
+.bg-Card {
   background-color: #6b14bd;
 }
+
 a {
   color: var(--primary);
   text-decoration: none;

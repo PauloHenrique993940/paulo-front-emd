@@ -171,10 +171,11 @@ export default function Home() {
 
         {/* Nova Seção 2: SOBRE MIM (Visão Rápida) */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold mb-8 flex items-center space-x-3 text-white">
+          <h2 className="text-3xl font-bold mb-8 flex items-center space-x-3">
             <Zap size={28} />
-            <span>Sobre Mim (Quick View)</span>
+            <span className="text-black">Sobre Mim (Quick View)</span>
           </h2>
+
           <div className="bg-Card p-6 rounded-xl shadow-inner border border-gray-700">
             <p className="text-lg text-gray-300 mb-4">
               Sou apaixonado por transformar ideias em experiências digitais
