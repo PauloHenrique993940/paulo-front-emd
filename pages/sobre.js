@@ -9,11 +9,11 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 
 const Header = () => (
-  <header className="sticky top-0 z-50 bg-blue-950 text-white backdrop-blur-md border-b border-gray-800">
+  <header className="sticky top-0 z-50 bg-white text-black backdrop-blur-md border-b border-gray-800">
     <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
       <Link
         href="/"
-        className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}
+        className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors logo`}
       >
         &lt;Paulo Henrique/&gt;
       </Link>
@@ -51,7 +51,7 @@ export default function SobrePage() {
           {/* Título Principal */}
           <section className="text-center mb-16">
             <h1
-              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-white`}
+              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-black`}
             >
               Minha Jornada
             </h1>
@@ -62,19 +62,17 @@ export default function SobrePage() {
           </section>
 
           {/* Seção de Introdução e História */}
-          <section className="mb-20 flex gap-20  bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
+          <section className="mb-20 flex gap-20  bg-Card p-8 ">
             <div className="flex flex-col justify-center items-center">
               <div className="flex justify-between  items-center mb-10">
                 <div className="flex items-center space-x-3">
                   <Zap size={28} className="text-indigo-400" />
-                  <h2 className="text-3xl font-bold text-indigo-400">
-                    Quem Eu Sou
-                  </h2>
+                  <h2 className="text-3xl font-bold text-white">Quem Eu Sou</h2>
                 </div>
               </div>
 
               <div className="flex justify-center">
-                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-10 border-4 border-indigo-400 shadow-lg">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-10 ">
                   <Image
                     src="/perfil.png"
                     alt="Foto de Perfil"
@@ -139,12 +137,12 @@ export default function SobrePage() {
 
           {/* Seção de Experiência e Educação (Timeline/Vertical Flow) */}
           <section className="mb-20">
-            <h2 className="text-3xl font-bold mb-8 border-b border-indigo-500 pb-2 flex items-center space-x-3">
+            <h2 className="text-3xl font-bold mb-8 border-b border-indigo-500 pb-2 text-black flex items-center space-x-3">
               <Briefcase size={28} />
               <span>Experiência & Formação</span>
             </h2>
 
-            <div className="space-y-12">
+            <div className="space-y-12 ">
               {/* Item de Experiência 1 */}
               <TimelineItem
                 icon={Briefcase}
@@ -188,7 +186,7 @@ export default function SobrePage() {
               />
             </div>
             <div>
-              <h1 className="text-3xl font-bold mb-8 mt-10 border-b border-indigo-500 pb-2 flex justify-center w-full">
+              <h1 className="text-3xl font-bold mb-8 mt-10 border-b text-black border-indigo-500 pb-2 flex justify-center w-full">
                 Outros cursos apenas no cúrriculo
               </h1>
             </div>
@@ -196,7 +194,7 @@ export default function SobrePage() {
 
           {/* Seção Habilidades Adicionais */}
           <section className="text-center">
-            <h2 className="text-3xl font-bold mb-8 border-b border-indigo-500 pb-2">
+            <h2 className="text-3xl font-bold mb-8 border-b text-black border-indigo-500 pb-2">
               Minha Stack Principal
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
@@ -225,7 +223,7 @@ export default function SobrePage() {
         </main>
 
         {/* Rodapé */}
-        <footer className="w-full  text-center py-4 text-sm border-t border-gray-700">
+        <footer className="w-full  text-center py-4 text-sm border-t text-black border-gray-700">
           &copy; {new Date().getFullYear()} Paulo Henrique .
         </footer>
       </div>

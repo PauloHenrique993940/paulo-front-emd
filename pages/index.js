@@ -30,12 +30,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky bg-blue-950 text-white top-0 z-50 backdrop-blur-md border-b border-gray-800">
+    <header className="sticky bg-white text-black top-0 z-50 backdrop-blur-md bordar">
       <div className="container mx-auto px-4 max-w-4xl flex justify-between items-center py-4">
         {/* Logo/Nome */}
         <Link
           href="/"
-          className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}
+          className={`${geistMono.variable} font-mono text-xl font-bold transition-colors logo`}
         >
           &lt;Paulo Henrique/&gt;
         </Link>
@@ -46,7 +46,7 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-300 hover:text-indigo-400 font-medium transition-colors"
+              className=" cursor font-medium transition-colors"
             >
               {item.name}
             </Link>
@@ -104,7 +104,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
         {/* Seção 1: HERO - Apresentação de Alto Impacto */}
         <section className="text-center mb-24">
-          <div className="relative w-32 h-32 mx-auto mb-6 w-100 h-100 overflow-hidden border-4 border-indigo-500 shadow-xl ring-4 ring-indigo-500/20">
+          <div className="relative w-32 h-32 mx-auto mb-6 w-100 h-100 overflow-hidden">
             {/* Otimização de Imagem */}
             <Image
               src="/paulo.png"
@@ -116,12 +116,12 @@ export default function Home() {
           </div>
 
           <h1
-            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 text-white drop-shadow-[0_0_25px_rgba(0,0,0,0.7)]`}
+            className={`${geistMono.variable} font-mono text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 title drop-shadow-[0_0_25px_rgba(0,0,0,0.7)]`}
           >
             Paulo Henrique Ferreira França
           </h1>
 
-          <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-black- mb-8 max-w-3xl mx-auto">
             Desenvolvedor Web Front-End especializado em React e Next.js, com
             experiência na construção de interfaces modernas e responsivas.
             Apaixonado por criar experiências de usuário (UX) intuitivas,
@@ -134,13 +134,10 @@ export default function Home() {
             <Link
               href="/projetos"
               className="px-8 py-3 
-             bg-[#0f1e2e] 
-             hover:bg-[#1a2f4a]
+             bg-[#6b14bd] 
              text-white 
              font-semibold 
              rounded-lg 
-             shadow-[0_0_25px_rgba(0,0,0,0.5)]
-             hover:shadow-[0_0_35px_rgba(0,150,255,0.35)]
              transition-all 
              duration-300 
              transform 
@@ -148,7 +145,7 @@ export default function Home() {
              flex items-center justify-center space-x-2"
             >
               <Briefcase size={20} />
-              <span>Ver Projetos</span>
+              <span className="buttonColor">Ver Projetos</span>
             </Link>
 
             <Link
@@ -178,7 +175,7 @@ export default function Home() {
             <Zap size={28} />
             <span>Sobre Mim (Quick View)</span>
           </h2>
-          <div className="bg-gray-800 p-6 rounded-xl shadow-inner border border-gray-700">
+          <div className="bg-Card p-6 rounded-xl shadow-inner border border-gray-700">
             <p className="text-lg text-gray-300 mb-4">
               Sou apaixonado por transformar ideias em experiências digitais
               rápidas e acessíveis. Minha especialidade é o ecossistema
@@ -199,8 +196,8 @@ export default function Home() {
         </section>
 
         {/* Seção 3: DESTAQUE DE PROJETOS */}
-        <section className="mb-24">
-          <h2 className="text-3xl font-bold mb-10 border-b border-indigo-500 pb-2 flex items-center space-x-2">
+        <section className="mb-24  ">
+          <h2 className="text-3xl font-bold mb-10 border-b border-indigo pb-2 flex items-center space-x-2">
             <Code size={28} />
             <span>Projetos Destaques </span>
           </h2>
@@ -213,18 +210,22 @@ export default function Home() {
               height={250}
               className="cardImagen"
             />
-            <ProjectCard
-              title="Plataforma Finanças"
-              description="Loja virtual completa com carrinho, checkout e gerenciamento de estado global. Demonstrando Redux/Zustand."
-              techs={['Next.js', 'TypeScript', 'Tailwind CSS']}
-              link="https://controle-financeiro-delta-steel.vercel.app/"
-            />
-            <ProjectCard
-              title="Projeto marvel"
-              description="Interface complexa para visualização de dados, utilizando gráficos e tabelas dinâmicas em tempo real."
-              techs={['React', 'Framer Motion', 'API REST']}
-              link="https://paulohenrique993940.github.io/projeto-marvel-mapadev-week-final-main/"
-            />
+            <div className="bg-Card w-100">
+              <ProjectCard
+                title="Plataforma Finanças"
+                description="Loja virtual completa com carrinho, checkout e gerenciamento de estado global. Demonstrando Redux/Zustand."
+                techs={['Next.js', 'TypeScript', 'Tailwind CSS']}
+                link="https://controle-financeiro-delta-steel.vercel.app/"
+              />
+            </div>
+            <div className="bg-Card">
+              <ProjectCard
+                title="Projeto marvel"
+                description="Interface complexa para visualização de dados, utilizando gráficos e tabelas dinâmicas em tempo real."
+                techs={['React', 'Framer Motion', 'API REST']}
+                link="https://paulohenrique993940.github.io/projeto-marvel-mapadev-week-final-main/"
+              />
+            </div>
             <Image
               src="/hero.png"
               alt="Projeto 1"
@@ -239,12 +240,14 @@ export default function Home() {
               height={250}
               className="cardImagen"
             />
-            <ProjectCard
-              title="Botflix"
-              description="Desenvolvimento de uma interface inteligente para recomendação de filmes, integrando APIs externas e automação com N8N."
-              techs={['API REST']}
-              link="https://paulohenrique993940.github.io/botflix-pro-redesign-main/"
-            />
+            <div className="bg-Card">
+              <ProjectCard
+                title="Botflix"
+                description="Desenvolvimento de uma interface inteligente para recomendação de filmes, integrando APIs externas e automação com N8N."
+                techs={['API REST']}
+                link="https://paulohenrique993940.github.io/botflix-pro-redesign-main/"
+              />
+            </div>
             <Image
               src="/pokedexunit.png"
               alt="Pokedex Unit"
@@ -252,18 +255,20 @@ export default function Home() {
               height={250}
               className="cardImagen"
             />
-            <ProjectCard
-              title="Pokedex Unit"
-              description="Criação de uma pokedex  com visualição  de pokemons e seus atributos"
-              techs={['Javascript']}
-              link="https://pokedex-uniti.vercel.app/"
-            />
+            <div className="bg-Card">
+              <ProjectCard
+                title="Pokedex Unit"
+                description="Criação de uma pokedex  com visualição  de pokemons e seus atributos"
+                techs={['Javascript']}
+                link="https://pokedex-uniti.vercel.app/"
+              />
+            </div>
           </div>
 
           <div className="text-center mt-12">
             <Link
               href="/projetos"
-              className="text-white hover:text-indigo-300 font-medium transition-colors border-b border-indigo-400 border-opacity-0 hover:border-opacity-100"
+              className="text-black hover:text-indigo-300 font-medium transition-colors border-b border-indigo-400 border-opacity-0 hover:border-opacity-100"
             >
               Ver todos {'>'}
             </Link>
@@ -298,7 +303,7 @@ export default function Home() {
 
         {/* Seção 5: Contato Rápido / Links Sociais (Com ícones reais) */}
         <section className="text-center">
-          <h2 className="text-2xl font-bold mb-6 text-white">
+          <h2 className="text-2xl font-bold mb-6 text-black">
             Vamos Construir Algo Juntos?
           </h2>
           <div className="flex justify-center space-x-8 text-3xl">
@@ -324,7 +329,7 @@ export default function Home() {
         </section>
       </main>
       {/* Rodapé Fixo */}
-      <footer className="w-full text-white text-center py-4 text-sm border-t border-gray-700">
+      <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
         &copy; {new Date().getFullYear()} Paulo Henrique. Código aberto e
         construído com ⚛️ Next.js.
       </footer>
@@ -340,7 +345,7 @@ const ProjectCard = ({ title, description, techs, link }) => (
   >
    <h3
   className="text-2xl font-semibold mb-3 
-             text-white 
+             text-black
              drop-shadow-[0_0_12px_rgba(200,200,200,0.35)]"
 >
   {title}

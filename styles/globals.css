@@ -1,13 +1,10 @@
 @import "tailwindcss";
 
-/* 🌟 PALETA PREMIUM */
 
-
-/* 🌤️ FUNDO BRANCO PREMIUM + EFEITOS DE LUZ */
 body {
-  background-color: black;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: black;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -18,10 +15,37 @@ body {
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
 }
+.logo {
+  display: inline-flex;
+  /* permite ícone + texto alinhados */
+  align-items: center;
+  gap: .6rem;
+  /* espaço entre ícone e texto */
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  text-decoration: none;
+  color: #6b14bd;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .18s ease, filter .18s ease;
+  user-select: none;
+  line-height: 1;
+}
 
+.buttonColor{
+  color: #ffffff;
+  font-weight: bold;
+}
 
+.title{
+  color: #6b14bd;
+}
+.bordar{
+  border-bottom: 4px solid #6b14bd;
+}
 
-
+.bg-Card{
+  background-color: #6b14bd;
+}
 a {
   color: var(--primary);
   text-decoration: none;

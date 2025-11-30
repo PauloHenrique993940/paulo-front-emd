@@ -10,9 +10,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 // --- Componente Header (Placeholder, use seu componente real) ---
 const Header = () => (
-    <header className="sticky bg-blue-950 top-0 z-50 text-white backdrop-blur-md border-b border-gray-800">
+    <header className="sticky  top-0 z-50 text-black backdrop-blur-md border-b border-gray-800">
         <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
-            <Link href="/" className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors`}>
+            <Link href="/" className={`${geistMono.variable} font-mono text-xl font-bold text-indigo-400 hover:text-indigo-300 transition-colors logo`}>
                 &lt;Paulo Henrique/&gt;
             </Link>
             <nav className="hidden sm:flex space-x-6">
@@ -29,17 +29,17 @@ const Header = () => (
 // --- Componente da Página de Contato ---
 export default function ContatoPage() {
     return (
-        <div className={`${geistSans.variable} font-sans min-h-screen  text-white`}>
+        <div className={`${geistSans.variable} font-sans min-h-screen  text-black`}>
             <Header />
 
             <main className="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
                 
                 {/* Título Principal */}
                 <section className="text-center mb-16">
-                    <h1 className={`${geistMono.variable} font-mono text-5xl text-white sm:text-6xl font-extrabold tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400`}>
+                    <h1 className={`${geistMono.variable} font-mono text-5xl text-black sm:text-6xl font-extrabold tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400`}>
                         Fale Comigo
                     </h1>
-                    <p className="text-xl text-white max-w-3xl mx-auto">
+                    <p className="text-xl text-black max-w-3xl mx-auto">
                         Seja para uma proposta de trabalho, parceria ou apenas dizer um "olá".
                     </p>
                 </section>
@@ -93,8 +93,8 @@ export default function ContatoPage() {
                     </div>
 
                     {/* Coluna 2: Informações de Contato e Links */}
-                    <div className="space-y-8 p-8 text-white itens-center flex-r md:p-0">
-                        <h2 className="text-2xl font-bold mb-4 text-white">Outras Formas de Contato</h2>
+                    <div className="space-y-8 p-8 text-black itens-center flex-r md:p-0">
+                        <h2 className="text-2xl font-bold mb-4 text-black">Outras Formas de Contato</h2>
                         
                         {/* Item de Contato: E-mail */}
                         <ContactInfoItem 
@@ -134,7 +134,7 @@ export default function ContatoPage() {
             </main>
 
             {/* Rodapé */}
-            <footer className="w-full text-white text-center py-4 text-sm border-t border-gray-700">
+            <footer className="w-full text-black text-center py-4 text-sm border-t border-gray-700">
                 &copy; {new Date().getFullYear()} [Paulo Henrique].
             </footer>
         </div>

@@ -6,19 +6,10 @@
 
   padding: 1rem 5%;
 
-  /* Preto com transparência tech */
-  background: rgba(5, 5, 5, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-
-  /* Glow premium (laranja + verde leve) */
-  box-shadow:
-    0 0 18px rgba(255, 120, 40, 0.06),
-    0 0 26px rgba(40, 255, 150, 0.07);
-
-  color: var(--text);
+ 
+ 
 }
 
 /* LISTA */
@@ -31,17 +22,21 @@
 }
 
 /* LINKS */
-.navbar a {
-  color: var(--text-muted);
-
+.cursor {
+  color: inherit;
+  transition: color .2s ease;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.5px;
 
-  transition:
-    color 0.25s ease,
-    transform 0.18s ease,
-    text-shadow 0.25s ease;
+  
+}
+.navbar a:hover{
+  color: inherit;
+}
+.a:hover {
+  color: #6b14bd;
+  /* cor roxa no hover */
 }
 
 .navbar a:hover {
