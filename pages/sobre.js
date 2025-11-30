@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 
 const Header = () => (
-  <header className="sticky top-0 z-50 bg-white text-black backdrop-blur-md border-b border-gray-800">
+  <header className="sticky top-0 z-50  text-white backdrop-blur-md border-b bordar">
     <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
       <Link
         href="/"
@@ -137,7 +137,7 @@ export default function SobrePage() {
 
           {/* Seção de Experiência e Educação (Timeline/Vertical Flow) */}
           <section className="mb-20">
-            <h2 className="text-3xl font-bold mb-8 border-b border-indigo-500 pb-2 text-black flex items-center space-x-3">
+            <h2 className="text-3xl font-bold mb-8 border-b border-indigo-500 pb-2 text-white flex items-center space-x-3">
               <Briefcase size={28} />
               <span>Experiência & Formação</span>
             </h2>
@@ -186,7 +186,7 @@ export default function SobrePage() {
               />
             </div>
             <div>
-              <h1 className="text-3xl font-bold mb-8 mt-10 border-b text-black border-indigo-500 pb-2 flex justify-center w-full">
+              <h1 className="text-3xl font-bold mb-8 mt-10 border-b text-white border-indigo-500 pb-2 flex justify-center w-full">
                 Outros cursos apenas no cúrriculo
               </h1>
             </div>
@@ -194,7 +194,7 @@ export default function SobrePage() {
 
           {/* Seção Habilidades Adicionais */}
           <section className="text-center">
-            <h2 className="text-3xl font-bold mb-8 border-b text-black border-indigo-500 pb-2">
+            <h2 className="text-3xl font-bold mb-8 border-b text-white border-indigo-500 pb-2">
               Minha Stack Principal
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
@@ -223,7 +223,7 @@ export default function SobrePage() {
         </main>
 
         {/* Rodapé */}
-        <footer className="w-full  text-center py-4 text-sm border-t text-black border-gray-700">
+        <footer className="w-full  text-center py-4 text-sm border-t text-white border-gray-700">
           &copy; {new Date().getFullYear()} Paulo Henrique .
         </footer>
       </div>

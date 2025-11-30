@@ -28,7 +28,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white text-black bordar   backdrop-blur-md border-b ">
+    <header className="sticky top-0 z-50  text-whitw bordar   backdrop-blur-md border-b ">
       <div className="container mx-auto px-4 max-w-6xl flex justify-between items-center py-4">
         <Link
           href="/"
@@ -282,7 +282,7 @@ export default function ProjetosPage() {
       <main className="container mx-auto px-4 py-16 sm:py-24 max-w-6xl">
         <section className="text-center mb-16">
           <h1
-            className={`${geistMono.variable} font-mono text-5xl sm:text-6xl text-black font-extrabold tracking-tighter mb-4  `}
+            className={`${geistMono.variable} font-mono text-5xl sm:text-6xl text-white font-extrabold tracking-tighter mb-4  `}
           >
             Toda minha trajetória de Desenvolvimento voçê acompanha, Aqui!
           </h1>
