@@ -189,7 +189,7 @@ export default function Home() {
               />
               <img 
                 className="tec-item"
-                src="./vite.js.png"
+                src="./Vite.js.png"
                 alt="Vite" 
               />
               <img
