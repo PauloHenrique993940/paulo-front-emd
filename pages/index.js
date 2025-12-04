@@ -172,7 +172,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold">💻 Minhas Tecnologias</h2>
 
             <div className="tecnologias flex flex-wrap gap-4 mt-6">
-              <img className="tec-item" src="./react.png" alt="React" />
+              <img className="tec-item" src="./React.png" alt="React" />
               <img
                 className="tec-item"
                 src="./javaScript.png"
