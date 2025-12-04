@@ -179,7 +179,7 @@ export default function Home() {
               />
               <img
                 className="tec-item"
-                src="./javascript.png"
+                src="./javascript_icon.png"
                 alt="Javascript"
               />
               <img
@@ -189,7 +189,7 @@ export default function Home() {
               />
               <img 
                 className="tec-item"
-                src="./Vite.js.png"
+                src="./Vit.png"
                 alt="Vite" 
               />
               <img
@@ -225,7 +225,7 @@ export default function Home() {
               <img className="tec-item" src="./Sass.png" alt="Sass" />
               <img className="tec-item" src="./Less.png" alt="Less" />
               <img className="tec-item" src="./JSON.png" alt="Json" />
-              <img className="tec-item" src="./JQuery.png" alt="JQUERY" />
+              <img className="tec-item" src="./jquery_icone.png" alt="JQUERY" />
               <img className="tec-item" src="./Grulp.png" alt="Grulp" />
               <img className="tec-item" src="./Gulp.png" alt="Gulp" />
               <img className="tec-item" src="./icone-github.png" alt="GitHub" />
