@@ -172,7 +172,11 @@ export default function Home() {
             <h2 className="text-3xl font-bold">💻 Minhas Tecnologias</h2>
 
             <div className="tecnologias flex flex-wrap gap-4 mt-6">
-              <img className="tec-item" src="./React.png" alt="React" />
+              <img 
+                className="tec-item"
+                src="./React.png"
+                alt="React" 
+              />
               <img
                 className="tec-item"
                 src="./javaScript.png"
@@ -183,15 +187,31 @@ export default function Home() {
                 src="./TypeScript.png"
                 alt="TypeScript"
               />
-              <img className="tec-item" src="./vite.js.png" alt="Vite" />
+              <img 
+                className="tec-item"
+                src="./vite.js.png"
+                alt="Vite" 
+              />
               <img
                 className="tec-item"
                 src="./VisualStudio.png"
                 alt="Visual Studio  Code"
               />
-              <img className="tec-item" src="./HTML5.png" alt="HTML" />
-              <img className="tec-item" src="./CSS3.png" alt="CSS3" />
-              <img className="tec-item" src="./Bootstrap.png" alt="Bootstrap" />
+              <img 
+                className="tec-item"
+                src="./HTML5.png"
+                alt="HTML" 
+              />
+              <img 
+                className="tec-item"
+                src="./CSS3.png" 
+                alt="CSS3" 
+              />
+              <img 
+                className="tec-item"
+                src="./Bootstrap.png"
+                alt="Bootstrap" 
+              />
               <img
                 className="tec-item"
                 src="./Tailwind.png"
