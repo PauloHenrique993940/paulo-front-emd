@@ -179,7 +179,7 @@ export default function Home() {
               />
               <img
                 className="tec-item"
-                src="./javaScript.png"
+                src="./javascript.png"
                 alt="Javascript"
               />
               <img
