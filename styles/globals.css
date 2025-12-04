@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
-
+/* 🎨 BASE DO SITE */
 body {
-  background-color: #000000;
+  background-color: #0A0A23;
+  /* azul escuro moderno */
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+  color: #C9CED6;
+  /* cinza claro elegante */
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -16,15 +18,15 @@ body {
   animation: fadeInUp 1s ease forwards;
 }
 
+/* 🔹 LOGO */
 .logo {
   display: inline-flex;
-  /* permite ícone + texto alinhados */
   align-items: center;
   gap: .6rem;
-  /* espaço entre ícone e texto */
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   text-decoration: none;
-  color: #6b14bd;
+  color: #0066FF;
+  /* azul royal */
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform .18s ease, filter .18s ease;
@@ -32,46 +34,53 @@ body {
   line-height: 1;
 }
 
+/* 🔹 BOTÃO DE TEXTO */
 .buttonColor {
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: bold;
 }
 
+/* 🔹 TÍTULOS */
 .title {
-  color: #6b14bd;
+  color: #6C63FF;
+  /* roxo suave */
 }
 
+/* 🔹 BORDA DESTACADA */
 .bordar {
-  border-bottom: 4px solid #6b14bd;
+  border-bottom: 4px solid #0066FF;
+  /* azul royal */
 }
 
+/* 🔹 FUNDO DE CARDS SIMPLES */
 .bg-Card {
-  background-color: #6b14bd;
+  background-color: #1E293B;
+  /* Azul-cinza moderno e amigável para UX */
 }
 
 a {
-  color: var(--primary);
+  color: #0066FF;
   text-decoration: none;
   font-weight: 500;
   transition: 0.25s ease;
 }
 
 a:hover {
-  color: var(--accent-3);
-  text-shadow: 0 4px 12px rgba(255, 120, 60, 0.28);
+  color: #6C63FF;
+  text-shadow: 0 4px 12px rgba(108, 99, 255, 0.35);
 }
 
 /* 🧊 CARDS CLEAN (Glass + White UI) */
 .card {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(18px);
   border-radius: 20px;
   padding: 1.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   box-shadow:
-    0 10px 35px rgba(0, 0, 0, 0.04),
-    0 18px 45px rgba(0, 0, 0, 0.06);
+    0 10px 35px rgba(0, 0, 0, 0.25),
+    0 18px 45px rgba(0, 0, 0, 0.30);
 
   animation: floatCard 6s ease-in-out infinite;
 }
@@ -79,7 +88,8 @@ a:hover {
 /* 🎨 BOTÕES PREMIUM */
 button,
 .btn {
-  background: linear-gradient(90deg, var(--accent-3), var(--green-1));
+  background: linear-gradient(90deg, #0066FF, #6C63FF);
+  /* azul → roxo */
   color: #fff;
   padding: 0.75rem 1.3rem;
   border-radius: 14px;
@@ -89,14 +99,14 @@ button,
   letter-spacing: 0.3px;
   cursor: pointer;
 
-  box-shadow: 0 8px 22px rgba(255, 120, 60, 0.25);
+  box-shadow: 0 8px 22px rgba(0, 102, 255, 0.25);
   transition: 0.25s ease;
 }
 
 button:hover,
 .btn:hover {
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 14px 36px rgba(40, 255, 160, 0.4);
+  box-shadow: 0 14px 36px rgba(108, 99, 255, 0.45);
   filter: brightness(1.12);
 }
 
@@ -125,4 +135,19 @@ button:hover,
   100% {
     transform: translateY(0px);
   }
+}
+
+.tec-item {
+  width: 80px;
+  transition: all 0.28s ease;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tec-item:hover {
+  transform: translateY(-6px) scale(1.07);
+  border-image: linear-gradient(45deg, #0066FF, #6C63FF) 1;
+  box-shadow: 0 0 18px rgba(108, 99, 255, 0.55);
 }

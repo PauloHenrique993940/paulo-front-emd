@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -106,7 +107,7 @@ export default function Home() {
         <section className="text-center mb-24">
           <div className="relative w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full">
             <Image
-              src="/paulo.png"
+              src="/pauloHenrique.jpeg"
               alt="Avatar do Desenvolvedor"
               layout="fill"
               objectFit="cover"
@@ -121,7 +122,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Desenvolvedor Web Front-End especializado em React e Next.js...
+            Desenvolvedor Front-End
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -164,6 +165,53 @@ export default function Home() {
             >
               Leia a História Completa {'->'}
             </Link>
+          </div>
+        </section>
+        <section className="mb-24 text-white">
+          <div>
+            <h2 className="text-3xl font-bold">Minhas Tecnologias</h2>
+
+            <div className="tecnologias flex flex-wrap gap-4 mt-6">
+              <img className="tec-item" src="./react.png" alt="React" />
+              <img
+                className="tec-item"
+                src="./javaScript.png"
+                alt="Javascript"
+              />
+              <img
+                className="tec-item"
+                src="./TypeScript.png"
+                alt="TypeScript"
+              />
+              <img className="tec-item" src="./vite.js.png" alt="Vite" />
+              <img
+                className="tec-item"
+                src="./VisualStudio.png"
+                alt="Visual Studio  Code"
+              />
+              <img className="tec-item" src="./HTML5.png" alt="HTML" />
+              <img className="tec-item" src="./CSS3.png" alt="CSS3" />
+              <img className="tec-item" src="./Bootstrap.png" alt="Bootstrap" />
+              <img
+                className="tec-item"
+                src="./Tailwind.png"
+                alt="Tailwind CSS"
+              />
+              <img
+                className="tec-item"
+                src="./Material.png"
+                alt="Material UI"
+              />
+              <img className="tec-item" src="./Sass.png" alt="Sass" />
+              <img className="tec-item" src="./Less.png" alt="Less" />
+              <img className="tec-item" src="./JSON.png" alt="Json" />
+              <img className="tec-item" src="./JQuery.png" alt="JQUERY" />
+              <img className="tec-item" src="./Grulp.png" alt="Grulp" />
+              <img className="tec-item" src="./Gulp.png" alt="Gulp" />
+              <img className="tec-item" src="./icone-github.png" alt="GitHub" />
+              <img className="tec-item" src="./GitHubCod.png" alt="GitHubCod" />
+              <img className="tec-item" src="./Git.png" alt="Git" />
+            </div>
           </div>
         </section>
 

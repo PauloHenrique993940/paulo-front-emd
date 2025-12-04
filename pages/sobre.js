@@ -51,7 +51,7 @@ export default function SobrePage() {
           {/* Título Principal */}
           <section className="text-center mb-16">
             <h1
-              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-black`}
+              className={`${geistMono.variable} font-mono text-5xl sm:text-6xl font-extrabold tracking-tighter mb-4 text-white`}
             >
               Minha Jornada
             </h1>
@@ -74,7 +74,7 @@ export default function SobrePage() {
               <div className="flex justify-center">
                 <div className="relative w-40 h-40 rounded-full overflow-hidden mb-10 ">
                   <Image
-                    src="/perfil.png"
+                    src="/pauloHenrique.jpeg"
                     alt="Foto de Perfil"
                     layout="fill"
                     objectFit="cover"

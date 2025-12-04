@@ -112,7 +112,7 @@ export default function ContatoPage() {
 
             {/* Coluna 2: Informações de Contato e Links */}
             <div className="space-y-8 p-8 text-white itens-center flex-r md:p-0">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-white">
                 Outras Formas de Contato
               </h2>
 
