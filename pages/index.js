@@ -169,7 +169,7 @@ export default function Home() {
         </section>
         <section className="mb-24 text-white">
           <div>
-            <h2 className="text-3xl font-bold">Minhas Tecnologias</h2>
+            <h2 className="text-3xl font-bold">💻 Minhas Tecnologias</h2>
 
             <div className="tecnologias flex flex-wrap gap-4 mt-6">
               <img className="tec-item" src="./react.png" alt="React" />
